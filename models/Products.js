@@ -16,6 +16,12 @@ const Products = sequelize.define(
       type: DataTypes.STRING,
       allowNull: false,
     },
+    size: {
+      type: DataTypes.INTEGER,
+    },
+    taste: {
+      type: DataTypes.INTEGER,
+    },
     price: {
       type: DataTypes.DECIMAL,
       allowNull: false,
