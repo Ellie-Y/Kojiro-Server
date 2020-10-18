@@ -1,0 +1,43 @@
+[{
+  "productId": "10",
+  "name": "Burger Cookie",
+  "imageUrl": "https://i.ibb.co/WKc1xbG/Wechat-IMG19771.jpg",
+  "price": "25",
+  "category": "cookies",
+  "sales": "3"
+}, {
+  "productId": "20",
+  "name": "Cup Cake",
+  "imageUrl": "https://i.ibb.co/4Pjhwr0/Wechat-IMG19765.jpg",
+  "price": "30",
+  "category": "cake",
+  "sales": "5"
+}, {
+  "productId": "30",
+  "name": "Thin Biscuit",
+  "imageUrl": "https://i.ibb.co/s1fGMDD/Wechat-IMG19728.jpg",
+  "price": "22",
+  "category": "cookies",
+  "sales": "4"
+}, {
+  "productId": "40",
+  "name": "Egg Scon",
+  "imageUrl": "https://i.ibb.co/CnbjTqY/Wechat-IMG19717.jpg",
+  "price": "15",
+  "category": "bakery",
+  "sales": "1"
+}, {
+  "productId": "50",
+  "name": "Choco Cheese",
+  "imageUrl": "https://i.ibb.co/Httvh16/Wechat-IMG19774.jpg",
+  "price": "35",
+  "category": "cake",
+  "sales": "2"
+}, {
+  "productId": "60",
+  "name": "Dried Biscuit",
+  "imageUrl": "https://i.ibb.co/YL9WWjk/Wechat-IMG19727.jpg",
+  "price": "22",
+  "category": "cookies",
+  "sales": "1"
+}]
