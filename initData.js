@@ -1,9 +1,16 @@
 const Product = require("./models/Products");
-const mockData = require("./mock/mockProducts.json");
+const Size = require('./models/Size')
+const Taste = require('./models/Taste')
+const mockProducts = require('./mock/mockProducts.json')
+const mockSize = require('./mock/mockSize.json')
+const mockTaste = require('./mock/mockTaste.json')
+
 const userServices = require("./services/userServices");
 
 async function initData() {
-  await Product.bulkCreate(mockData);
+  await Product.bulkCreate(mockProducts)
+  await Size.bulkCreate(mockSize)
+  await Taste.bulkCreate(mockTaste)
 
   userServices.addUser({    // ID(key) 让数据库定义 
     username: "Ellie",

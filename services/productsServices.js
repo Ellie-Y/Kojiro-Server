@@ -2,7 +2,7 @@
 const Product = require("../models/Products");
 const validate = require("validate.js");
 
-//! 查出来的结果是一个 promise 对象，所以在使用这些查询方法的时候一定要 .then 来拿到对象
+//* 查出来的结果是一个 promise 对象，所以在使用这些查询方法的时候一定要 .then 来拿到对象
 async function getProducts(type, limit) {
   let result = null;
   if (type === 'sales') {

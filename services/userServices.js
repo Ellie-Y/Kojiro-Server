@@ -58,18 +58,18 @@ async function addUser(userObj) {
 }
 
 
-async function userLogin(username, password) {
-  password = md5(password);
+async function login(username, password) {
+  password = md5(password)
   const result = await User.findOne({
     where: {
       username,
       password,
     },
-  });
+  })
   if (result && result.username === username) {
-    return result.toJSON();
+    return result.toJSON()
   }
-  return null;
+  return null
 }
 
 
@@ -93,8 +93,8 @@ async function updateUser(UserId, changes) {
 }
 
 module.exports = {
-  userLogin,
+  login,
   findById,
   addUser,
   updateUser,
-};
+}

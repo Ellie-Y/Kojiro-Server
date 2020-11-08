@@ -2,9 +2,9 @@ const sequelize = require("./db");
 const { DataTypes } = require("sequelize");
 // Key ID 让数据库定义
 const Products = sequelize.define(
-  "Products",
+  'Products',
   {
-    productId: {
+    pid: {
       type: DataTypes.STRING,
       allowNull: false,
     },
@@ -12,18 +12,22 @@ const Products = sequelize.define(
       type: DataTypes.STRING,
       allowNull: false,
     },
-    imageUrl: {
+    main_img: {
       type: DataTypes.STRING,
       allowNull: false,
     },
+    sub_img: {
+      type: DataTypes.STRING,
+      allowNull: true,
+    },
     size: {
-      type: DataTypes.INTEGER,
+      type: DataTypes.STRING,
     },
     taste: {
-      type: DataTypes.INTEGER,
+      type: DataTypes.STRING,
     },
     price: {
-      type: DataTypes.DECIMAL,
+      type: DataTypes.STRING,
       allowNull: false,
     },
     category: {
@@ -33,12 +37,12 @@ const Products = sequelize.define(
     sales: {
       type: DataTypes.STRING,
       allowNull: false,
-    }
+    },
   },
   {
-    createdAt: false,
-    updatedAt: false,
-    paranoid: true  // 表里面的数据不会被真正地删除，而是增加一列 deleteAt
+    // createdAt: false,
+    // updatedAt: false,
+    paranoid: true, // 表里面的数据不会被真正地删除，而是增加一列 deleteAt
   }
 );
 
